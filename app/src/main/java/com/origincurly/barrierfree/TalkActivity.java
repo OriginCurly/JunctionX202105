@@ -29,7 +29,7 @@ public class TalkActivity extends BasicActivity {
         initSTT();
         initTTS();
         startTalk();
-        sst1Handler.sendEmptyMessageDelayed(0, 1500);
+//        sst1Handler.sendEmptyMessageDelayed(0, 1500);
         startSpeechRepeat("please speak your destination", 1);
     }
 

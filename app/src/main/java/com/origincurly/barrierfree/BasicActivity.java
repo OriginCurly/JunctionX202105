@@ -243,7 +243,7 @@ public class BasicActivity extends AppCompatActivity implements GlobalValue {
     public void initSTT() {
         sttIntent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
         sttIntent.putExtra(RecognizerIntent.EXTRA_CALLING_PACKAGE, getPackageName());
-        sttIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE,"ko-KR");
+        sttIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE,"en-US");
         sRecognizer = SpeechRecognizer.createSpeechRecognizer(mContext);
         sRecognizer.setRecognitionListener(listener);
     }
