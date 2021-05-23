@@ -5,7 +5,6 @@ import android.os.Handler;
 import android.os.Message;
 import android.view.KeyEvent;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -62,81 +61,232 @@ public class NavigateActivity extends BasicActivity {
         a1Handler.sendEmptyMessageDelayed(0, 0);
     }
 
+    int animateDuration = 300;
+    
     Handler a1Handler = new Handler() {
         public void handleMessage(Message msg) {
-            sstResult("Gangnam");
+            b1_Layout.setVisibility(View.VISIBLE);
+            c1_Layout.setVisibility(View.VISIBLE);
+            b1_Layout.animate()
+                    .alpha(1)
+                    .setDuration(animateDuration);
+            b1_Layout.animate()
+                    .alpha(1)
+                    .setDuration(animateDuration);
             a2Handler.sendEmptyMessageDelayed(0, ANIM_INTERVAL_TIME);
         }
     };
 
     Handler a2Handler = new Handler() {
         public void handleMessage(Message msg) {
-            sstResult("Gangnam");
+            b1_Layout.animate()
+                    .alpha(0)
+                    .setDuration(animateDuration);
+            c1_Layout.animate()
+                    .alpha(0)
+                    .setDuration(animateDuration);
+
+            b2_Layout.setVisibility(View.VISIBLE);
+            b2_Layout.animate()
+                    .alpha(1)
+                    .setDuration(animateDuration)
+                    .setStartDelay(animateDuration);
+            c2_Layout.setVisibility(View.VISIBLE);
+            c2_Layout.animate()
+                    .alpha(1)
+                    .setDuration(animateDuration)
+                    .setStartDelay(animateDuration);
             a3Handler.sendEmptyMessageDelayed(0, ANIM_INTERVAL_TIME);
         }
     };
 
     Handler a3Handler = new Handler() {
         public void handleMessage(Message msg) {
-            sstResult("Gangnam");
+            b1_Layout.setVisibility(View.GONE);
+            c1_Layout.setVisibility(View.GONE);
+            c2_Layout.animate()
+                    .alpha(0)
+                    .setDuration(animateDuration);
+
+            c3_Layout.setVisibility(View.VISIBLE);
+            c3_Layout.animate()
+                    .alpha(1)
+                    .setDuration(animateDuration)
+                    .setStartDelay(animateDuration);
             a4Handler.sendEmptyMessageDelayed(0, ANIM_INTERVAL_TIME);
         }
     };
 
     Handler a4Handler = new Handler() {
         public void handleMessage(Message msg) {
-            sstResult("Gangnam");
+            c2_Layout.setVisibility(View.GONE);;
+            c3_Layout.animate()
+                    .alpha(0)
+                    .setDuration(animateDuration);
+            c4_Layout.setVisibility(View.VISIBLE);
+            c4_Layout.animate()
+                    .alpha(1)
+                    .setDuration(animateDuration)
+                    .setStartDelay(animateDuration);
             a5Handler.sendEmptyMessageDelayed(0, ANIM_INTERVAL_TIME);
         }
     };
 
     Handler a5Handler = new Handler() {
         public void handleMessage(Message msg) {
-            sstResult("Gangnam");
+            c3_Layout.setVisibility(View.GONE);
+
+            c4_Layout.animate()
+                    .alpha(0)
+                    .setDuration(animateDuration);
+
+            c5_Layout.setVisibility(View.VISIBLE);
+            c5_Layout.animate()
+                    .alpha(1)
+                    .setDuration(animateDuration)
+                    .setStartDelay(animateDuration);
             a6Handler.sendEmptyMessageDelayed(0, ANIM_INTERVAL_TIME);
         }
     };
 
     Handler a6Handler = new Handler() {
         public void handleMessage(Message msg) {
-            sstResult("Gangnam");
+            c4_Layout.setVisibility(View.GONE);
+
+            b2_Layout.animate()
+                    .alpha(0)
+                    .setDuration(animateDuration);
+            c5_Layout.animate()
+                    .alpha(0)
+                    .setDuration(animateDuration);
+
+            b3_Layout.setVisibility(View.VISIBLE);
+            b3_Layout.animate()
+                    .alpha(1)
+                    .setDuration(animateDuration)
+                    .setStartDelay(animateDuration);
+            c6_Layout.setVisibility(View.VISIBLE);
+            c6_Layout.animate()
+                    .alpha(1)
+                    .setDuration(animateDuration)
+                    .setStartDelay(animateDuration);
             a7Handler.sendEmptyMessageDelayed(0, ANIM_INTERVAL_TIME);
         }
     };
 
     Handler a7Handler = new Handler() {
         public void handleMessage(Message msg) {
-            sstResult("Gangnam");
+            b2_Layout.setVisibility(View.GONE);
+            c5_Layout.setVisibility(View.GONE);
+
+            b3_Layout.animate()
+                    .alpha(0)
+                    .setDuration(animateDuration);
+            c6_Layout.animate()
+                    .alpha(0)
+                    .setDuration(animateDuration);
+            c7_Layout.setVisibility(View.VISIBLE);
+            c7_Layout.animate()
+                    .alpha(1)
+                    .setDuration(animateDuration)
+                    .setStartDelay(animateDuration);
             a8Handler.sendEmptyMessageDelayed(0, ANIM_INTERVAL_TIME);
         }
     };
 
     Handler a8Handler = new Handler() {
         public void handleMessage(Message msg) {
-            sstResult("Gangnam");
+            b3_Layout.setVisibility(View.GONE);
+            c6_Layout.setVisibility(View.GONE);
+            c7_Layout.animate()
+                    .alpha(0)
+                    .setDuration(animateDuration);
+
+            b4_Layout.setVisibility(View.VISIBLE);
+            b4_Layout.animate()
+                    .alpha(1)
+                    .setDuration(animateDuration)
+                    .setStartDelay(animateDuration);
+            c8_Layout.setVisibility(View.VISIBLE);
+            c8_Layout.animate()
+                    .alpha(1)
+                    .setDuration(animateDuration)
+                    .setStartDelay(animateDuration);
             a9Handler.sendEmptyMessageDelayed(0, ANIM_INTERVAL_TIME);
         }
     };
 
     Handler a9Handler = new Handler() {
         public void handleMessage(Message msg) {
-            sstResult("Gangnam");
+            c7_Layout.setVisibility(View.GONE);
+
+            b1_Layout.animate()
+                    .alpha(0)
+                    .setDuration(animateDuration);
+            c8_Layout.animate()
+                    .alpha(0)
+                    .setDuration(animateDuration);
+            c9_Layout.setVisibility(View.VISIBLE);
+            c9_Layout.animate()
+                    .alpha(1)
+                    .setDuration(animateDuration)
+                    .setStartDelay(animateDuration);
             a10Handler.sendEmptyMessageDelayed(0, ANIM_INTERVAL_TIME);
         }
     };
 
     Handler a10Handler = new Handler() {
         public void handleMessage(Message msg) {
-//            a12Handler("Gangnam");
+            c9_Layout.setVisibility(View.GONE);
+
+            c10_Layout.animate()
+                    .alpha(0)
+                    .setDuration(animateDuration);
+
+            c10_Layout.setVisibility(View.VISIBLE);
+            c10_Layout.animate()
+                    .alpha(1)
+                    .setDuration(animateDuration)
+                    .setStartDelay(animateDuration);
             a11Handler.sendEmptyMessageDelayed(0, ANIM_INTERVAL_TIME);
         }
     };
 
     Handler a11Handler = new Handler() {
         public void handleMessage(Message msg) {
-            sstResult("Gangnam");
+            c10_Layout.setVisibility(View.GONE);
+
+            b4_Layout.animate()
+                    .alpha(0)
+                    .setDuration(animateDuration);
+            c11_Layout.animate()
+                    .alpha(0)
+                    .setDuration(animateDuration);
+
+            b5_Layout.setVisibility(View.VISIBLE);
+            b5_Layout.animate()
+                    .alpha(1)
+                    .setDuration(animateDuration)
+                    .setStartDelay(animateDuration);
+            c11_Layout.setVisibility(View.VISIBLE);
+            c11_Layout.animate()
+                    .alpha(1)
+                    .setDuration(animateDuration)
+                    .setStartDelay(animateDuration);
         }
     };
+
+
+    public void ListClicked(View v) {
+
+    }
+    public void OverviewClicked(View v) {
+        startActivityClass(OverViewActivity.class, R.anim.animation_fade_in, R.anim.animation_stop_short);
+    }
+    public void EndClicked(View v) {
+        startActivityClass(MapActivity.class, R.anim.animation_fade_in, R.anim.animation_stop_short);
+    }
+
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {

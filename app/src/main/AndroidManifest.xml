@@ -54,6 +54,10 @@
             android:name=".NavigateActivity"
             android:screenOrientation="portrait"/>
 
+        <activity
+            android:name=".OverViewActivity"
+            android:screenOrientation="portrait"/>
+
     </application>
 
 </manifest>

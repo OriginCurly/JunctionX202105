@@ -99,7 +99,7 @@ public class IntroActivity extends BasicActivity {
         }
 
         if (isGranted) {
-            startActivityClass(MapActivity.class);
+            startActivityClass(MapActivity.class, R.anim.animation_fade_in, R.anim.animation_stop_short);
         } else {
 //            denied_Layout.setVisibility(View.VISIBLE);
 //            showToastMessage(R.string.msg_permission_need);
