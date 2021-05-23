@@ -40,6 +40,8 @@ public class SearchActivity extends BasicActivity {
                 return true;
             }
         });
+        initTTS();
+        startSpeechRepeat("", 1);
 
     }
 
@@ -91,6 +93,7 @@ public class SearchActivity extends BasicActivity {
             if (resultCode == RESULT_OK) {
                 String msg = intent.getStringExtra("result");
                 where_EditTxt.setText(msg);
+                showResult();
             } else {
                 where_EditTxt.setText("");
             }
@@ -110,17 +113,17 @@ public class SearchActivity extends BasicActivity {
     }
 
     public void HospitalClicked(View v) {
-        where_EditTxt.setText("Mapo-gu Office Station Line 6");
+        where_EditTxt.setText("Gayang-dong, Gangseo-gu Hospital");
         showResult();
     }
 
     public void CompanyClicked(View v) {
-        where_EditTxt.setText("Mapo-gu Office Station Line 6");
+        where_EditTxt.setText("KB Kookmin Bank Shinnae-dong");
         showResult();
     }
 
     public void GangseoClicked(View v) {
-        where_EditTxt.setText("Mapo-gu Office Station Line 6");
+        where_EditTxt.setText("Gangseo-gu Office Annex");
         showResult();
     }
 

@@ -143,9 +143,9 @@ public class BasicActivity extends AppCompatActivity implements GlobalValue {
             @Override
             public void onInit(int state) {
                 if (state == TextToSpeech.SUCCESS) {
-                    tts.setLanguage(Locale.KOREAN);
+                    tts.setLanguage(Locale.ENGLISH);
                 } else {
-                    showToastMessage("TTS 객체 초기화 중 에러가 발생했습니다.");
+                    showToastMessage("system error");
                 }
 
                 tts.setOnUtteranceProgressListener(new UtteranceProgressListener() {
@@ -171,7 +171,7 @@ public class BasicActivity extends AppCompatActivity implements GlobalValue {
             @Override
             public void onInit(int status) {
                 if(status != ERROR) {
-                    tts.setLanguage(Locale.KOREAN);
+                    tts.setLanguage(Locale.ENGLISH);
                 }
             }
         });

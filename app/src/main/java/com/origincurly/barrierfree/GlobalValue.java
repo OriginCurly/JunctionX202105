@@ -31,7 +31,7 @@ public interface GlobalValue {
     //time
     int SPEECH_REPEAT_MAX = 3;
     int SPEECH_REPEAT_INTERVAL_TIME = 5000;
-    int ANIM_INTERVAL_TIME = 2000;
+    int ANIM_INTERVAL_TIME = 8000;
 
     int ANIM_DELAY_TIME = 300;
     int INTRO_DELAY_TIME = 1500;

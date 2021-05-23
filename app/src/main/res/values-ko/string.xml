@@ -1,38 +1,73 @@
 <resources>
+<!--    <string name="app_name">BarrierFree</string>-->
+
+<!--    <string name='app_back'>뒤로가기</string>기-->
+
+<!--    &lt;!&ndash;message&ndash;&gt;-->
+<!--    <string name="msg_app_exit">\'뒤로\'버튼을 한번 더 누르시면 종료됩니다.</string>-->
+<!--    <string name="msg_server_error">서버와의 연결이 좋지 않습니다.</string>-->
+<!--    <string name="msg_permission_need">권한을 모두 승인해 주셔야 서비스를 이용하실 수 있습니다.</string>-->
+
+<!--    <string name="permission_title">권한이 필요합니다.</string>-->
+<!--    <string name="permission_re">권한 승인</string>-->
+
+<!--    <string name="app_exit">종료</string>-->
+
+
+<!--    &lt;!&ndash;map&ndash;&gt;-->
+<!--    <string name="map_input_hint">어디가?</string>-->
+
+<!--    &lt;!&ndash;tts&ndash;&gt;-->
+<!--    <string name="tts_need">도착지를 말씀해주세요</string>-->
+<!--    <string name="tts_destination">당신의 도착지를\n알려주세요</string>-->
+<!--    <string name="tts_listening">듣고 있습니다</string>-->
+
+<!--    &lt;!&ndash;start&ndash;&gt;-->
+<!--    <string name="start_destination">도착</string>-->
+<!--    <string name="start_arrival">도착 시간</string>-->
+<!--    <string name="start_min">min</string>-->
+<!--    <string name="start_km">km</string>-->
+<!--    <string name="start_bus_stop">버스 정류장</string>-->
+<!--    <string name="start_bus_info">버스 정보</string>-->
+<!--    <string name="start_walkway">보도</string>-->
+<!--    <string name="start_list">목록</string>-->
+<!--    <string name="start_overview">전체 경로 보기</string>-->
+<!--    <string name="start_end">끝내기</string>-->
+<!--    <string name="start_navigate">길안내</string>-->
     <string name="app_name">BarrierFree</string>
 
-    <string name='app_back'>뒤로가기</string>기
+    <string name='app_back'>back</string>
 
-    <!--message-->
-    <string name="msg_app_exit">\'뒤로\'버튼을 한번 더 누르시면 종료됩니다.</string>
-    <string name="msg_server_error">서버와의 연결이 좋지 않습니다.</string>
-    <string name="msg_permission_need">권한을 모두 승인해 주셔야 서비스를 이용하실 수 있습니다.</string>
+    <!--message-->\' .
+    <string name="msg_app_exit">Click the \'back\'button once more to finish.</string>
+    <string name="msg_server_error">Bad connection to the server.</string>
+    <string name="msg_permission_need">You must grant all permissions before you can use the service.</string>
 
-    <string name="permission_title">권한이 필요합니다.</string>
-    <string name="permission_re">권한 승인</string>
+    <string name="permission_title">Permission Need</string>
+    <string name="permission_re">Permission Regrant</string>
 
-    <string name="app_exit">종료</string>
+    <string name="app_exit">Exit</string>
 
 
     <!--map-->
-    <string name="map_input_hint">어디가?</string>
+    <string name="map_input_hint">Where to?</string>
 
     <!--tts-->
-    <string name="tts_need">도착지를 말씀해주세요</string>
-    <string name="tts_destination">당신의 도착지를\n알려주세요</string>
-    <string name="tts_listening">듣고 있습니다</string>
+    <string name="tts_need">Please talk your destination</string>
+    <string name="tts_destination">Tell me your\ndestination</string>
+    <string name="tts_listening">I\'m listening</string>
 
     <!--start-->
-    <string name="start_destination">도착</string>
-    <string name="start_arrival">도착 시간</string>
+    <string name="start_destination">Destination</string>
+    <string name="start_arrival">arrival</string>
     <string name="start_min">min</string>
     <string name="start_km">km</string>
-    <string name="start_bus_stop">버스 정류장</string>
-    <string name="start_bus_info">버스 정보</string>
-    <string name="start_walkway">보도</string>
-    <string name="start_list">목록</string>
-    <string name="start_overview">전체 경로 보기</string>
-    <string name="start_end">끝내기</string>
-    <string name="start_navigate">길안내</string>
+    <string name="start_bus_stop">Bus stop</string>
+    <string name="start_bus_info">Bus info</string>
+    <string name="start_walkway">Walkway</string>
+    <string name="start_list">List</string>
+    <string name="start_overview">Overview</string>
+    <string name="start_end">End</string>
+    <string name="start_navigate">Navigate</string>
 
 </resources>

@@ -137,7 +137,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/start_info_box"
-                android:visibility="gone">
+                android:alpha="1"
+                android:visibility="visible">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -196,6 +197,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/start_info_box"
+                android:alpha="0"
                 android:visibility="gone">
 
                 <TextView
@@ -225,6 +227,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/start_info_box"
+                android:alpha="0"
                 android:visibility="gone">
 
                 <TextView
@@ -254,6 +257,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/start_info_box"
+                android:alpha="0"
                 android:visibility="gone">
 
                 <TextView
@@ -302,6 +306,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/start_info_box"
+                android:alpha="0"
                 android:visibility="gone">
 
                 <TextView
@@ -325,12 +330,12 @@
                     android:textColor="@color/basic_600"/>
 
                 <TextView
-                    android:layout_width="98dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="75dp"
-                    android:layout_marginTop="34dp"
+                    android:layout_marginTop="28dp"
                     android:text="116m"
-                    android:textSize="66dp"
+                    android:textSize="56dp"
                     android:textStyle="bold"
                     android:textColor="@color/basic_600"/>
 
@@ -346,7 +351,7 @@
                 android:id="@+id/c1_Layout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:visibility="gone">
+                android:visibility="visible">
 
                 <ImageView
                     android:src="@drawable/ic_direction_xl"
@@ -401,6 +406,7 @@
                 android:id="@+id/c2_Layout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:alpha="0"
                 android:visibility="gone">
 
                 <ImageView
@@ -447,6 +453,7 @@
                 android:id="@+id/c3_Layout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:alpha="0"
                 android:visibility="gone">
 
                 <ImageView
@@ -493,6 +500,7 @@
                 android:id="@+id/c4_Layout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:alpha="0"
                 android:visibility="gone">
 
                 <ImageView
@@ -539,6 +547,7 @@
                 android:id="@+id/c5_Layout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:alpha="0"
                 android:visibility="gone">
 
                 <ImageView
@@ -594,6 +603,7 @@
                 android:id="@+id/c6_Layout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:alpha="0"
                 android:visibility="gone">
 
                 <ImageView
@@ -649,6 +659,7 @@
                 android:id="@+id/c7_Layout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:alpha="0"
                 android:visibility="gone">
 
                 <ImageView
@@ -695,6 +706,7 @@
                 android:id="@+id/c8_Layout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:alpha="0"
                 android:visibility="gone">
 
                 <ImageView
@@ -740,6 +752,7 @@
                 android:id="@+id/c9_Layout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:alpha="0"
                 android:visibility="gone">
 
                 <ImageView
@@ -785,6 +798,7 @@
                 android:id="@+id/c10_Layout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:alpha="0"
                 android:visibility="gone">
 
                 <ImageView
@@ -830,6 +844,7 @@
                 android:id="@+id/c11_Layout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:alpha="0"
                 android:visibility="gone">
 
                 <ImageView
@@ -882,117 +897,116 @@
             </RelativeLayout>
 
         </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <LinearLayout
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+            <RelativeLayout
+                android:layout_width="78dp"
+                android:layout_height="78dp">
+                <Button
+                    android:layout_width="78dp"
+                    android:layout_height="78dp"
+                    android:paddingStart="16dp"
+                    android:background="@drawable/yellow_transparent_circle"
+                    android:onClick="ListClicked"/>
+                <ImageView
+                    android:src="@drawable/ic_list_1"
+                    android:layout_width="39dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="25dp"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/start_list"
+                android:gravity="center_horizontal"
+                android:textSize="18dp"
+                android:lineHeight="27dp"
+                android:textStyle="bold"
+                android:textColor="@color/basic_bright"/>
+        </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="78dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:orientation="horizontal"
-            android:layout_marginBottom="20dp"
-            android:weightSum="3">
-            <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+            <RelativeLayout
                 android:layout_width="78dp"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_weight="1">
-                <RelativeLayout
+                android:layout_height="78dp">
+                <Button
                     android:layout_width="78dp"
-                    android:layout_height="78dp">
-                    <Button
-                        android:layout_width="78dp"
-                        android:layout_height="78dp"
-                        android:paddingStart="16dp"
-                        android:background="@drawable/yellow_transparent_circle"
-                        android:onClick="ListClicked"/>
-                    <ImageView
-                        android:src="@drawable/ic_list_1"
-                        android:layout_width="39dp"
-                        android:layout_height="28dp"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginTop="25dp"/>
-                </RelativeLayout>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:text="@string/start_list"
-                    android:gravity="center_horizontal"
-                    android:textSize="18dp"
-                    android:lineHeight="27dp"
-                    android:textStyle="bold"
-                    android:textColor="@color/basic_bright"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="78dp"
+                    android:layout_height="78dp"
+                    android:paddingStart="16dp"
+                    android:background="@drawable/yellow_transparent_circle"
+                    android:onClick="OverviewClicked"/>
+                <ImageView
+                    android:src="@drawable/ic_overview"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_weight="1">
-                <RelativeLayout
-                    android:layout_width="78dp"
-                    android:layout_height="78dp">
-                    <Button
-                        android:layout_width="78dp"
-                        android:layout_height="78dp"
-                        android:paddingStart="16dp"
-                        android:background="@drawable/yellow_transparent_circle"
-                        android:onClick="OverviewClicked"/>
-                    <ImageView
-                        android:src="@drawable/ic_overview"
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:layout_marginStart="15dp"
-                        android:layout_marginTop="15dp"/>
-                </RelativeLayout>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:text="@string/start_overview"
-                    android:gravity="center_horizontal"
-                    android:textSize="18dp"
-                    android:lineHeight="27dp"
-                    android:textStyle="bold"
-                    android:textColor="@color/basic_bright"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="78dp"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_weight="1">
-                <RelativeLayout
-                    android:layout_width="78dp"
-                    android:layout_height="78dp">
-                    <Button
-                        android:layout_width="78dp"
-                        android:layout_height="78dp"
-                        android:paddingStart="16dp"
-                        android:background="@drawable/red_transparent_circle"
-                        android:onClick="EndClicked"/>
-                    <ImageView
-                        android:src="@drawable/ic_end"
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:layout_marginStart="15dp"
-                        android:layout_marginTop="15dp"/>
-                </RelativeLayout>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:text="@string/start_end"
-                    android:gravity="center_horizontal"
-                    android:textSize="18dp"
-                    android:lineHeight="27dp"
-                    android:textStyle="bold"
-                    android:textColor="@color/basic_bright"/>
-            </LinearLayout>
-
+                android:layout_marginTop="4dp"
+                android:text="@string/start_overview"
+                android:gravity="center_horizontal"
+                android:textSize="18dp"
+                android:lineHeight="27dp"
+                android:textStyle="bold"
+                android:textColor="@color/basic_bright"/>
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+            <RelativeLayout
+                android:layout_width="78dp"
+                android:layout_height="78dp">
+                <Button
+                    android:layout_width="78dp"
+                    android:layout_height="78dp"
+                    android:paddingStart="16dp"
+                    android:background="@drawable/red_transparent_circle"
+                    android:onClick="EndClicked"/>
+                <ImageView
+                    android:src="@drawable/ic_end"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/start_end"
+                android:gravity="center_horizontal"
+                android:textSize="18dp"
+                android:lineHeight="27dp"
+                android:textStyle="bold"
+                android:textColor="@color/basic_bright"/>
+        </LinearLayout>
+
     </LinearLayout>
 
 </RelativeLayout>

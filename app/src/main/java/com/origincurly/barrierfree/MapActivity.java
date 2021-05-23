@@ -28,6 +28,7 @@ public class MapActivity extends BasicActivity  implements OnMapReadyCallback {
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.mapView);
         mapFragment.getMapAsync(this);
+        initTTS();
     }
 
     @Override

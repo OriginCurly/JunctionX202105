@@ -27,9 +27,10 @@ public class TalkActivity extends BasicActivity {
         tts_result_Txt = findViewById(R.id.tts_result_Txt);
 
         initSTT();
-//        initTTS();
+        initTTS();
         startTalk();
         sst1Handler.sendEmptyMessageDelayed(0, 1500);
+        startSpeechRepeat("please speak your destination", 1);
     }
 
     Handler sst1Handler = new Handler() {

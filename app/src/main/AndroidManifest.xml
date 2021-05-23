@@ -39,10 +39,6 @@
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name=".ListActivity"
-            android:screenOrientation="portrait"/>
-
-        <activity
             android:name=".SearchActivity"
             android:screenOrientation="portrait"/>
 
@@ -56,6 +52,10 @@
 
         <activity
             android:name=".OverViewActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".NavigateListActivity"
             android:screenOrientation="portrait"/>
 
     </application>

@@ -18,16 +18,17 @@ public class OverViewActivity extends BasicActivity  implements OnMapReadyCallba
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_map);
+        setContentView(R.layout.activity_overview);
         setActivity(this, this);
 
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.mapView);
         mapFragment.getMapAsync(this);
+        initTTS();
     }
 
     public void BackClicked(View v) {
-        finishActivity(R.anim.animation_stop_short, R.anim.animation_bottom_close);
+        finishActivity(R.anim.animation_stop_short, R.anim.animation_fade_out);
     }
 
     @Override

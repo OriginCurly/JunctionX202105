@@ -58,7 +58,8 @@ public class NavigateActivity extends BasicActivity {
         min_Txt = findViewById(R.id.min_Txt);
         km_Txt = findViewById(R.id.km_Txt);
 
-        a1Handler.sendEmptyMessageDelayed(0, 0);
+        a1Handler.sendEmptyMessageDelayed(0, 200);
+        initTTS();
     }
 
     int animateDuration = 300;
@@ -160,7 +161,6 @@ public class NavigateActivity extends BasicActivity {
                     .alpha(0)
                     .setDuration(animateDuration);
 
-            b3_Layout.setVisibility(View.VISIBLE);
             b3_Layout.animate()
                     .alpha(1)
                     .setDuration(animateDuration)
@@ -196,6 +196,8 @@ public class NavigateActivity extends BasicActivity {
 
     Handler a8Handler = new Handler() {
         public void handleMessage(Message msg) {
+            min_Txt.setText("35");
+            km_Txt.setText("1.2");
             b3_Layout.setVisibility(View.GONE);
             c6_Layout.setVisibility(View.GONE);
             c7_Layout.animate()
@@ -254,6 +256,8 @@ public class NavigateActivity extends BasicActivity {
 
     Handler a11Handler = new Handler() {
         public void handleMessage(Message msg) {
+            min_Txt.setText("5");
+            km_Txt.setText("0.42");
             c10_Layout.setVisibility(View.GONE);
 
             b4_Layout.animate()
@@ -278,6 +282,7 @@ public class NavigateActivity extends BasicActivity {
 
 
     public void ListClicked(View v) {
+        startActivityClass(NavigateListActivity.class, R.anim.animation_fade_in, R.anim.animation_stop_short);
 
     }
     public void OverviewClicked(View v) {

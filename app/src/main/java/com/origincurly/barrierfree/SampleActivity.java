@@ -17,7 +17,7 @@ public class SampleActivity extends BasicActivity {
 
 //        talkOutput_Txt = findViewById(R.id.talkOutput_Txt);
 
-//        initSTT();
+        initTTS();
     }
     public void BtnClicked(View v) {
     }
