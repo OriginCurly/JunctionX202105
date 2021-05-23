@@ -40,8 +40,9 @@ public class SearchActivity extends BasicActivity {
                 return true;
             }
         });
+
         initTTS();
-        startSpeechRepeat("", 1);
+        startSpeechRepeat("pleas input your destination", 1);
 
     }
 

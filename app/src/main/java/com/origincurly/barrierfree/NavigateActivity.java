@@ -58,8 +58,9 @@ public class NavigateActivity extends BasicActivity {
         min_Txt = findViewById(R.id.min_Txt);
         km_Txt = findViewById(R.id.km_Txt);
 
-        a1Handler.sendEmptyMessageDelayed(0, 200);
+        a1Handler.sendEmptyMessageDelayed(0, 1500);
         initTTS();
+//        startSpeechRepeat("start guide mode", 1);
     }
 
     int animateDuration = 300;
@@ -75,6 +76,7 @@ public class NavigateActivity extends BasicActivity {
                     .alpha(1)
                     .setDuration(animateDuration);
             a2Handler.sendEmptyMessageDelayed(0, ANIM_INTERVAL_TIME);
+            startSpeechRepeat("go to the right 371meter", 1);
         }
     };
 
@@ -98,6 +100,7 @@ public class NavigateActivity extends BasicActivity {
                     .setDuration(animateDuration)
                     .setStartDelay(animateDuration);
             a3Handler.sendEmptyMessageDelayed(0, ANIM_INTERVAL_TIME);
+            startSpeechRepeat("waiting for the bus", 1);
         }
     };
 
@@ -130,6 +133,7 @@ public class NavigateActivity extends BasicActivity {
                     .setDuration(animateDuration)
                     .setStartDelay(animateDuration);
             a5Handler.sendEmptyMessageDelayed(0, ANIM_INTERVAL_TIME);
+            startSpeechRepeat("the bus has arrived", 1);
         }
     };
 
@@ -147,6 +151,7 @@ public class NavigateActivity extends BasicActivity {
                     .setDuration(animateDuration)
                     .setStartDelay(animateDuration);
             a6Handler.sendEmptyMessageDelayed(0, ANIM_INTERVAL_TIME);
+            startSpeechRepeat("second from the front", 1);
         }
     };
 
@@ -171,6 +176,7 @@ public class NavigateActivity extends BasicActivity {
                     .setDuration(animateDuration)
                     .setStartDelay(animateDuration);
             a7Handler.sendEmptyMessageDelayed(0, ANIM_INTERVAL_TIME);
+            startSpeechRepeat("go to the left 5meter", 1);
         }
     };
 
@@ -191,6 +197,7 @@ public class NavigateActivity extends BasicActivity {
                     .setDuration(animateDuration)
                     .setStartDelay(animateDuration);
             a8Handler.sendEmptyMessageDelayed(0, ANIM_INTERVAL_TIME);
+            startSpeechRepeat("take the bus", 2);
         }
     };
 
@@ -234,6 +241,7 @@ public class NavigateActivity extends BasicActivity {
                     .setDuration(animateDuration)
                     .setStartDelay(animateDuration);
             a10Handler.sendEmptyMessageDelayed(0, ANIM_INTERVAL_TIME);
+            startSpeechRepeat("2 stops left", 1);
         }
     };
 
@@ -251,6 +259,7 @@ public class NavigateActivity extends BasicActivity {
                     .setDuration(animateDuration)
                     .setStartDelay(animateDuration);
             a11Handler.sendEmptyMessageDelayed(0, ANIM_INTERVAL_TIME);
+            startSpeechRepeat("next stops left", 1);
         }
     };
 
@@ -277,6 +286,7 @@ public class NavigateActivity extends BasicActivity {
                     .alpha(1)
                     .setDuration(animateDuration)
                     .setStartDelay(animateDuration);
+            startSpeechRepeat("go to the right 262meter", 1);
         }
     };
 

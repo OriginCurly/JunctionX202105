@@ -29,6 +29,7 @@ public class MapActivity extends BasicActivity  implements OnMapReadyCallback {
                 .findFragmentById(R.id.mapView);
         mapFragment.getMapAsync(this);
         initTTS();
+        startSpeechRepeat("please input your destination", 1);
     }
 
     @Override
