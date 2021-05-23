@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#4374D9</color>
+    <color name="colorPrimary">#191F28</color>
     <color name="colorPrimaryDark">#1a1a1a</color>
     <color name="colorAccent">#2a2a2a</color>
 
 
-    <color name="intro_status_bar_color">#4374D9</color>
-    <color name="status_bar_color">#4374D9</color>
+    <color name="intro_status_bar_color">#191F28</color>
+    <color name="status_bar_color">#191F28</color>
 
 
-
-    <color name="basic_btn_txt">#ffffff</color>
-    <color name="btn_1_back">#6B66FF</color>
-    <color name="btn_2_back">#F15F5F</color>
-
-
-    <color name="intro_btn_back">#6B66FF</color>
+    <color name="intro_btn_back">#191F28</color>
     <color name="intro_btn_txt">#ffffff</color>
 
 
