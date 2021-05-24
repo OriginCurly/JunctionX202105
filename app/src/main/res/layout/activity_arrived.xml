@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/basic_back">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:src="@drawable/ic_check"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="116dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:text="Arrived"
+            android:gravity="center_horizontal"
+            android:textSize="64dp"
+            android:lineHeight="96dp"
+            android:textStyle="bold"
+            android:textColor="@color/basic_bright"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="5dp"
+            android:text="Destination is about"
+            android:gravity="center_horizontal"
+            android:textSize="28dp"
+            android:lineHeight="42dp"
+            android:textStyle="bold"
+            android:textColor="@color/basic_600"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:text="3m"
+                android:gravity="center_horizontal"
+                android:textSize="28dp"
+                android:lineHeight="42dp"
+                android:textStyle="bold"
+                android:textColor="@color/basic_bright"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="to your"
+                android:gravity="center_horizontal"
+                android:textSize="28dp"
+                android:lineHeight="42dp"
+                android:textStyle="bold"
+                android:textColor="@color/basic_600"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:text="left"
+                android:gravity="center_horizontal"
+                android:textSize="28dp"
+                android:lineHeight="42dp"
+                android:textStyle="bold"
+                android:textColor="@color/basic_bright"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/arrive_btn_1_box"
+            android:text="Search"
+            android:textSize="26dp"
+            android:textColor="@color/basic_accent"
+            android:textAllCaps="false"
+            android:onClick="SearchClicked"/>
+        
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/arrive_btn_2_box">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/arriveCount_Txt"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="10"
+                    android:textSize="20dp"
+                    android:textColor="@color/basic_800"
+                    android:background="@drawable/arrive_count_back"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="End"
+                    android:textSize="26dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/basic_800"/>
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:onClick="EndClicked"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

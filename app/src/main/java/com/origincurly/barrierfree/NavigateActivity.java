@@ -259,7 +259,7 @@ public class NavigateActivity extends BasicActivity {
                     .setDuration(animateDuration)
                     .setStartDelay(animateDuration);
             a11Handler.sendEmptyMessageDelayed(0, ANIM_INTERVAL_TIME);
-            startSpeechRepeat("next stops left", 1);
+            startSpeechRepeat("next stops. Get ready to get off", 1);
         }
     };
 
@@ -287,9 +287,15 @@ public class NavigateActivity extends BasicActivity {
                     .setDuration(animateDuration)
                     .setStartDelay(animateDuration);
             startSpeechRepeat("go to the right 262meter", 1);
+            a12Handler.sendEmptyMessageDelayed(0, ANIM_INTERVAL_TIME);
         }
     };
 
+    Handler a12Handler = new Handler() {
+        public void handleMessage(Message msg) {
+            startActivityClass(ArrivedActivity.class, R.anim.animation_fade_in, R.anim.animation_stop_short);
+        }
+    };
 
     public void ListClicked(View v) {
         startActivityClass(NavigateListActivity.class, R.anim.animation_fade_in, R.anim.animation_stop_short);
@@ -301,7 +307,6 @@ public class NavigateActivity extends BasicActivity {
     public void EndClicked(View v) {
         startActivityClass(MapActivity.class, R.anim.animation_fade_in, R.anim.animation_stop_short);
     }
-
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {

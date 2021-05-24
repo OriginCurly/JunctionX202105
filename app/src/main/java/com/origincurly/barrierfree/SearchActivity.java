@@ -20,11 +20,16 @@ public class SearchActivity extends BasicActivity {
 
     private boolean isShow = false;
 
+    private int vv = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
         setActivity(this, this);
+
+        Intent intent = getIntent();
+        vv = intent.getIntExtra("vv", 0);
 
         where_EditTxt = findViewById(R.id.where_EditTxt);
         recent_Layout = findViewById(R.id.recent_Layout);
@@ -104,7 +109,11 @@ public class SearchActivity extends BasicActivity {
         if (isShow) {
             showRecent();
         } else {
-            finishActivity(R.anim.animation_stop_short, R.anim.animation_bottom_close);
+            if (vv == 1) {
+                startActivityClass(MapActivity.class, R.anim.animation_fade_in, R.anim.animation_stop_short);
+            } else {
+                finishActivity(R.anim.animation_stop_short, R.anim.animation_bottom_close);
+            }
         }
     }
 
